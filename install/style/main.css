@@ -1,0 +1,371 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:tahoma;
+}
+h1, h2, h3, h4, h5, h6{
+	background:#efefef;
+	padding:5px 20px;
+	margin:10px 0px;
+	font-family:Arial;
+	font-weight: bold;
+	border-left:3px #ccc solid;
+	font-style:italic;
+}
+body{
+	background:url(/core/i/bgForSystem.jpg) repeat-x top #fefece;
+}
+
+#authForm{
+	display:block;
+	width:250px;
+	height:170px;
+	margin:auto;
+	background:#efefef;
+	border:1px solid #ccc;
+	padding:10px;
+	color:#999;
+}
+
+#authForm div{
+	padding:10px 0px;
+}
+
+#authForm label{
+	width:80px;
+	float:left;
+	display:block;
+}
+
+#main{
+	padding:10px;
+}
+#mainCoreMenu{
+	height:40px;
+	padding-left:10px;
+}
+#mainCoreMenu *{
+	font-size:12px !important;
+}
+ 
+#mainCoreMenu li{
+	list-style-type:none;
+}
+#mainCoreMenu li.liFirst{
+	height:38px;
+}
+#mainCoreMenu li.liFirst a.aFirst{
+	color:#fff;
+	padding:10px;
+	display:block;
+	text-decoration:none;
+}
+#mainCoreMenu li.liFirst:hover{
+	background:#FFFFFF;
+	color:#666;
+}
+#mainCoreMenu li.liFirst:hover a{
+	color:#666;
+}
+
+#menuContent{
+	float:left;
+	height:28px;
+}
+#menuContent li{
+	height:28px;
+	display:block;
+	float:left;
+	font-size:80%;
+	color:#fff;
+}
+#menuContent li.hasSubmenu{
+	background:url(/i/liMenu.gif) no-repeat right;
+}
+#menuContent li img{
+	border:0px;
+	padding-top:10px;
+	margin-bottom:2px;
+}
+
+#menuContent li ul{
+	display:none;
+	overflow:visible;
+	width: 220px;
+	clear:both;
+	position:absolute;
+	opacity: 0.9;
+	background:#efefef;
+	border:1px solid #CCCCCC;
+	color:#FFFFFF;
+}
+#menuContent li li ul, #menuContent li li li ul{
+	margin-left:210px;
+	margin-top:-28px;
+}
+
+
+#menuContent li li{
+	font-size:100%;
+	display:block;
+	border-top:1px solid #CCCCCC;
+	width:100%;
+	height:auto;
+}
+#menuContent li li a, #menuContent li li a:visited{
+	display:block;
+	padding:5px;
+	clear:both;
+	float:none;
+	width:200px;
+	color:#fff;
+}
+#menuContent li li a:hover{
+	background:#fff;
+}
+
+
+
+span.error{
+	color:#990000;
+	padding:10px;
+}
+input.text {
+	padding:3px;
+	background:#eee;
+	border:1px solid #bcbcbc;
+	width:400px;
+}
+iframe{
+	width: 900px !important;
+	height: 500px !important;
+}
+#innerNavigation{
+	display:block;
+	border-bottom:4px solid #ccc;
+	height:30px;
+	width:902px;
+}
+#allEdit{
+	width:842px;
+	padding:10px 30px;
+	background:#ccc;
+	color:#fff;
+}
+#otherEdit{
+	display:none;
+	width:840px;
+	padding:10px 30px;
+	background:#efefef;
+	border:1px solid #999;
+}
+#otherEdit p.item{
+	padding:0px 10px;
+	clear:both;
+}
+td{
+	vertical-align:middle;
+}
+th.varName{
+	width:200px;
+}
+th.varValue{
+	width:560px;
+}
+#variables td input{
+	width:550px;
+	font-size:12px;
+}
+td a.delete{
+	background:url(/core/i/orderNot.gif);
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	display:block;
+	float:left;
+}
+#otherEdit p.item label{
+	width:200px;
+	display:block;
+	float:left;
+	margin:2px 0px;
+	font-size:12px;
+}
+#addNewItems{
+	cursor:pointer;
+}
+#otherEdit h5{
+	color:#000000;
+	background:#fff;
+}
+#innerNavigation a{
+	display:block;
+	background:#999;
+	color:#fff;
+	float:left;
+	height:20px;
+	padding:5px 50px;
+	margin:0px 20px 0px 0px;
+	cursor:pointer;
+}
+#innerNavigation a.selected{
+	cursor:default !important;
+	background:#ccc !important;
+	color:#000 !important;
+}
+#innerNavigation a:hover{
+	background:#eee;
+	color:#000;
+}
+#cssEdit, #jsEdit{
+	display:none;
+}
+
+input.submit{
+	display:block;
+	background:#999;
+	color:#fff;
+	padding:5px ;
+	cursor:pointer;
+	margin:5px 0px;
+}
+
+#itemList{
+	width:910px;
+	border:0px;
+}
+#itemList1{
+	width:100%;
+	border:0px;
+}
+#itemList td.ch, #itemList1 td.ch {
+	background:#eee !important;
+	padding:4px;
+}
+#itemList th.first{
+	width:300px;
+}
+#itemList th.second{
+	width:120px;
+}
+#itemList1 th.first{
+	width:300px;
+}
+#itemList1 th.second{
+	width:140px;
+}
+#itemList1 th.status{
+	width:70px;
+}
+th.id{
+	width:3%;
+}
+td{
+	vertical-align:middle;
+}
+td.id, td.onOff, td.date, td.ch{
+	text-align:center;
+}
+th.name{
+	width:10%;
+}
+th.date{
+	width:8%;
+}
+th.filename{
+	width:20%;
+}
+th.url{
+}
+th.select{
+	width:18%;
+}
+th.onOff{
+	width:4%;
+}
+
+a.status0{
+	background:url(/core/i/orderNot.gif);
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+}
+a.status1{
+	background:url(/core/i/orderOk.gif);
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+}
+#itemList th{
+	color:#000;
+}
+
+#catSelect{
+	font-size:12px;
+}
+#catSelect a, #catSelect a:visited{
+	text-decoration:underline;
+	cursor:pointer;
+}
+#catSelect a:hover{
+	text-decoration:none;
+}
+#editParentCategoryForModule{
+	display:block;
+	margin:5px 0px;
+	padding:5px;
+	background:#999;
+	color:#fff;
+	border:1px solid #ccc;
+	width:200px;
+	text-align:center;
+	text-decoration:none !important;
+}
+
+table.tablesorter  {
+background-color:#CDCDCD;
+font-family:arial;
+font-size:8pt;
+margin:10px 0 15px;
+text-align:left;
+width:100%;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+background-color:#E6EEEE;
+border:1px solid #FFFFFF;
+font-size:8pt;
+padding:4px;
+}
+table.tablesorter thead tr .header {
+background-image:url(/script/plugin/i/bg.gif);
+background-position:right center;
+background-repeat:no-repeat;
+cursor:pointer;
+}
+table.tablesorter tbody td {
+background-color:#FFFFFF;
+color:#3D3D3D;
+padding:4px;
+vertical-align:top;
+}
+table.tablesorter tbody tr.grey td {
+background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+background-image:url("/script/plugin/i/asc.gif");
+}
+table.tablesorter thead tr .headerSortDown {
+background-image:url("/script/plugin/i/desc.gif");
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color:#8DBDD8;
+}
+
+
+td 	select{
+	width:100%;
+}

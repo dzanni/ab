@@ -1,0 +1,3191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap')
+
+\:root
+	--main-bg-color: #ccc
+	--white-bg-color: #fff
+	--link-hover: #2E3F7F
+	--link: #2E3F7F
+	--general-black: #231F20
+	--general-gray: #808285
+	--general-accent: #2E3F7F
+	--general-white: #FFFFFF
+	--other-gray-dark: #83889F
+	--other-line: #DEDEDE
+	--other-accent-light: #ECF0FA
+	--other-red: #EB5757
+	--bg-dark: #172040
+	--bg-dark-light: #29314F
+	--bg-light: #E0E4F4
+
+$font: 'Nunito', sans-serif
+	
+*
+	box-sizing: border-box
+	
+body
+	font: 600 16px/16px $font
+	color: var(--general-black)
+	min-height: 100vh
+	min-width: 300px
+	background: var(--main-bg-color)
+
+	&.scroll
+
+a
+	text-decoration: none
+	color: var(--link)
+
+.bootstrap-wrapper .container-fluid
+	max-width: 1430px
+	height: 100%
+
+	.row
+		height: 100%
+
+.justify-space
+	justify-content: space-between
+
+.justify-center
+	justify-content: center
+
+.align-center
+	align-items: center
+
+.line__top
+	border-top: 1px solid var(--other-line)
+
+.line__bottom
+	border-bottom: 1px solid var(--other-line)
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.button
+	height: 60px
+	width: 260px
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	background: var(--general-accent)
+	border-radius: 30px
+	transition-duration: 0.25s
+
+	&:hover
+		background: var(--bg-dark)
+
+header
+	position: relative
+
+	&.treemenu__open
+		z-index: 3
+
+	&.ver_01
+		background: var(--white-bg-color)
+		min-height: 100px
+
+		.container-fluid
+			padding-top: 21px
+			padding-bottom: 19px
+			display: flex
+
+		.header__logo
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__contacts
+			display: flex
+
+		.header__contacts-col
+			display: flex
+			flex-direction: column
+
+			& + .header__contacts-col
+				margin-left: 120px
+
+		.contacts-phone__link
+			font-size: 1.125rem
+			display: flex
+			align-items: center
+			line-height: 100%
+			margin-bottom: 15px
+			transition-duration: 0.25s
+			margin-top: 4px
+			color: var(--general-black)
+
+			&:hover
+				color: var(--link-hover)
+
+			& > img
+				display: block
+				margin-right: 13.5px
+
+		.header__contacts-city
+			font-size: 1.125rem
+			align-items: center
+			display: flex
+			line-height: 100%
+
+			& > img
+				display: block
+				margin-right: 13.5px
+
+		.header__contacts-soc
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 14px
+
+		.contacts-soc__link
+			display: flex
+			width: 30px
+			height: 30px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+
+			& + .contacts-soc__link
+				margin-left: 12px
+
+		.contacts-call__link
+			font-weight: 700
+			color: var(--link)
+
+	&.ver_02
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 21px
+			padding-bottom: 19px
+			display: flex
+
+		.header__bottom
+
+			.container-fluid
+				padding-top: 14px
+				padding-bottom: 14px
+
+		.header__logo
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__contacts
+			display: flex
+			align-items: center
+
+		.header__contacts-col
+			display: flex
+			flex-direction: column
+
+			& + .header__contacts-col
+				margin-left: 48px
+
+		.contacts-phone__link
+			font-size: 1.375rem
+			display: flex
+			align-items: center
+			line-height: 100%
+			margin-bottom: 8px
+			transition-duration: 0.25s
+			margin-top: 8px
+			justify-content: flex-end
+			font-weight: 700
+			color: var(--general-black)
+
+			&:hover
+				color: var(--link-hover)
+
+		.contacts-mail__link
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			line-height: 100%
+			transition-duration: 0.25s
+			margin-top: 4px
+
+			&:hover
+				color: var(--link-hover)
+
+			& > img
+				display: block
+				margin-right: 9.5px		
+
+		.contacts-call__link
+			font-weight: 700
+			width: 220px
+			height: 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 2px solid var(--link)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-top: 3px
+
+			&:hover
+				color: #ffffff
+				background: var(--link)
+
+		.header__nav
+			display: flex
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+			& + .header__nav-item
+				margin-left: 32px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--general-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid #DEDEDE
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--font-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__contacts-soc
+			display: flex
+			justify-content: flex-end
+
+		.contacts-soc__link
+			display: flex
+			width: 30px
+			height: 30px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+
+			& + .contacts-soc__link
+				margin-left: 12px
+
+	&.ver_03
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 30px
+			padding-bottom: 30px
+			display: flex
+
+		.header__top
+			background: var(--other-accent-light)
+
+			.container-fluid
+				padding-top: 14px
+				padding-bottom: 14px
+
+		.header__logo
+			width: 100%
+			max-width: 50%
+			display: flex
+			justify-content: center
+
+			&:first-child
+				margin-left: auto
+
+			&:last-child
+				margin-right: auto
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__contacts
+			display: flex
+			align-items: center
+			width: 25%
+
+		.header__contacts-icon
+			display: flex
+			width: 54px
+			height: 54px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+			margin-right: 16px
+			min-width: 54px
+
+		.header__contacts-col
+			display: flex
+			flex-direction: column
+
+			& + .header__contacts-col
+				margin-left: 48px
+
+		.header__contacts-time
+			font-weight: 600
+			color: var(--link)
+			font-size: 0.875rem
+
+		.contacts-phone__link
+			font-size: 1.5rem
+			display: flex
+			align-items: center
+			line-height: 100%
+			margin-bottom: 8px
+			transition-duration: 0.25s
+			margin-top: 12px
+			justify-content: flex-end
+			font-weight: 700
+			color: var(--general-black)
+			white-space: nowrap
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav
+			display: flex
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+			margin: 0 26px
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--general-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid var(--other-line)
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--font-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__contacts-soc
+			display: flex
+			justify-content: flex-end
+			width: 25%
+
+		.contacts-soc__link
+			display: flex
+			width: 54px
+			height: 54px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+
+			& > img
+				width: 50%
+				max-height: 50%
+
+			& + .contacts-soc__link
+				margin-left: 16px
+
+	&.ver_04
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 30px
+			padding-bottom: 30px
+			display: flex
+
+		.header__top
+			background: var(--other-accent-light)
+
+			.container-fluid
+				padding-top: 14px
+				padding-bottom: 14px
+
+		.header__logo
+			display: flex
+			justify-content: center
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__contacts
+			display: flex
+			align-items: center
+			margin: 0 auto
+
+		.header__contacts-col
+			display: flex
+			flex-direction: column
+
+			& + .header__contacts-col
+				margin-left: 48px
+
+		.header__contacts-time
+			font-weight: 600
+			color: var(--general-gray)
+			font-size: 0.875rem
+
+		.contacts-phone__link
+			font-size: 1.5rem
+			display: flex
+			align-items: center
+			line-height: 100%
+			margin-bottom: 8px
+			transition-duration: 0.25s
+			margin-top: 12px
+			justify-content: flex-end
+			font-weight: 700
+			color: var(--general-black)
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__form
+			display: flex
+			margin: 0 auto
+
+		.header-search
+			width: 420px
+			display: flex
+			flex-direction: column
+
+		.header-search__label
+			display: block
+			position: relative
+
+		.header-search__input
+			width: 100%
+			height: 50px
+			border: 1px solid var(--other-line)
+			border-radius: 25px
+			padding: 0 25px
+			font-family: $font
+
+		.header-search__submit
+			position: absolute
+			height: 50px
+			width: 50px
+			right: 1px
+			top: 1px
+			border: none
+			background: transparent
+
+		.header-search__radio
+			display: flex
+			margin-top: 12px
+
+			& > input[type=radio]
+				opacity: 0
+				position: absolute
+
+				&:checked + .header-search__radio-item
+
+					&::before
+						opacity: 1
+
+		.header-search__radio-item
+			position: relative
+			padding-left: 24px
+			margin-right: 24px
+			display: block
+			cursor: pointer
+
+			&:last-child
+				margin-right: 0
+
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				width: 16px
+				height: 16px
+				border-radius: 8px
+				border: 1px solid #2E3F7F
+				top: 0px
+
+			&::before
+				content: ''
+				position: absolute
+				width: 8px
+				height: 8px
+				background: #2E3F7F
+				border-radius: 50%
+				left: 4px
+				top: 4px
+				opacity: 0
+
+		.header__basket
+			display: flex
+			align-items: center
+			margin-left: auto
+
+		.header-basket__icon
+			display: flex
+			width: 64px
+			height: 64px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+			margin-right: 16px
+			position: relative
+
+		.header-basket__count
+			position: absolute
+			font-size: 0.75rem
+			color: #fff
+			background: #EB5757
+			padding: 1px 6px
+			border-radius: 9px
+			right: 0
+			top: 0
+
+		.header-basket__info
+			display: flex
+			flex-direction: column
+
+		.header-basket__title
+			color: var(--general-gray)
+			font-size: 0.875rem
+			margin-bottom: 8px
+
+		.header-basket__price
+			font-size: 1.25rem
+			font-weight: 700
+
+		.header__nav
+			display: flex
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+
+			& + .header__nav-item
+				margin-left: 32px
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--font-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid #DEDEDE
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--font-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__auth
+			display: flex
+			align-items: center
+
+		.header-auth__icon
+			background: #fff
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 10px
+
+	&.ver_05
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 30px
+			padding-bottom: 30px
+			display: flex
+
+		.header__top
+			background: var(--link)
+
+			.container-fluid
+				padding-top: 12px
+				padding-bottom: 12px
+
+		.header__logo
+			display: flex
+			justify-content: center
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__city
+			position: relative
+
+		.header__city-current
+			color: #fff
+			padding: 10px 0
+			display: flex
+			align-items: center
+
+			.svg
+				display: block
+				margin-left: 5px
+
+				path
+					fill: #fff
+
+
+		.header__city-popup
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 0%
+			z-index: 2
+			margin-top: 5px
+			display: none
+
+		.city-popup__link
+			display: flex
+			padding: 6px 0
+			color: var(--general-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			& + .city-popup__link
+				border-top: 1px solid var(--other-accent-light)
+
+		.header__contacts
+			display: flex
+			margin: 0 auto
+
+			& + .header__contacts-col
+				margin-left: 120px
+
+		.contacts-phone__link
+			display: flex
+			align-items: center
+			line-height: 100%
+			transition-duration: 0.25s
+			color: #fff
+			margin-right: 81px
+
+			&:hover
+				color: var(--general-white)
+
+			& > .svg
+				display: block
+				margin-right: 9px
+
+				path
+					stroke: #fff
+
+		.contacts-mail__link
+			display: flex
+			align-items: center
+			line-height: 100%
+			transition-duration: 0.25s
+			color: #fff
+
+			&:hover
+				color: var(--general-white)
+
+			& > .svg
+				display: block
+				margin-right: 9px
+
+				path
+					stroke: #fff
+
+		.header__contacts-city
+			font-size: 1.125rem
+			align-items: center
+			display: flex
+			line-height: 100%
+
+			& > img
+				display: block
+				margin-right: 13.5px
+
+		.header__form
+			display: flex
+			margin: 0 auto
+
+		.header-search
+			width: 400px
+			display: flex
+			flex-direction: column
+
+		.header-search__label
+			display: block
+			position: relative
+
+		.header-search__input
+			width: 100%
+			height: 46px
+			border: 1px solid #fff
+			border-radius: 25px
+			padding: 0 25px
+			font-family: $font
+
+		.header-search__submit
+			position: absolute
+			height: 50px
+			width: 50px
+			right: 1px
+			top: 1px
+			border: none
+			background: transparent
+		
+		.header__basket
+			display: flex
+			align-items: center
+			margin-left: auto
+
+		.header-basket__icon
+			display: flex
+			width: 64px
+			height: 64px
+			align-items: center
+			justify-content: center
+			background: var(--other-accent-light)
+			border-radius: 50%
+			margin-right: 16px
+			position: relative
+
+		.header-basket__count
+			position: absolute
+			font-size: 0.75rem
+			color: #fff
+			background: #EB5757
+			padding: 1px 6px
+			border-radius: 9px
+			right: 0
+			top: 0
+
+		.header-basket__info
+			display: flex
+			flex-direction: column
+
+		.header-basket__title
+			color: var(--general-gray)
+			font-size: 0.875rem
+			margin-bottom: 8px
+
+		.header-basket__price
+			font-size: 1.25rem
+			font-weight: 700
+
+		.header__nav
+			display: flex
+			margin: 0 auto
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+			margin: 0 20px
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--general-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid #DEDEDE
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--general-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__auth
+			display: flex
+			align-items: center
+			color: #fff
+
+		.header-auth__icon
+			margin-right: 12px
+
+			.svg
+
+				path
+						stroke: #fff
+
+	&.ver_06
+		background: var(--white-bg-color)
+		min-height: 90px
+
+		.container-fluid
+			display: flex
+			padding-top: 15px
+			padding-bottom: 15px
+
+		.header__logo
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__info
+			display: flex
+
+		.header__contacts-col
+			display: flex
+			flex-direction: column
+
+		.header__menu-open
+			display: flex
+			width: 50px
+			height: 50px
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			margin-left: 35px
+
+			span
+				display: block
+				width: 40px
+				height: 3px
+				background: var(--general-black)
+				border-radius: 2px
+
+				& + span
+					margin-top: 7.5px
+
+		.contacts-call__link
+			display: flex
+			height: 50px
+			padding: 0 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-white)
+			background: var(--general-accent)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-left: 40px
+
+			&:hover
+				background: var(--general-white)
+				color: var(--general-accent)
+
+	&.ver_07
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 20px
+			padding-bottom: 20px
+			min-height: 100px
+			display: flex
+
+		.header__menu-open
+			width: 60px
+			height: 60px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: var(--general-accent)
+			border-radius: 8px
+			margin-right: 32px
+			transition-duration: 0.25s
+
+			&:hover
+				background: var(--bg-dark-light)
+			
+			span
+				display: block
+				width: 32px
+				height: 3px
+				border-radius: 2px
+				background: #fff
+
+				& + span
+					margin-top: 7.5px
+
+		.header__top
+			background: var(--other-accent-light)
+
+			.container-fluid
+				padding-top: 13px
+				padding-bottom: 13px
+				min-height: 60px
+
+		.header__logo
+			display: flex
+			justify-content: center
+			margin-right: auto
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.contacts-city__name
+			display: flex
+			align-items: center
+			line-height: 100%
+			transition-duration: 0.25s
+			color: #000
+
+			& > .svg
+				display: block
+				margin-right: 9px
+
+				path
+					stroke: #2E3F7F
+
+		.contacts-phone__link
+			display: flex
+			align-items: center
+			line-height: 100%
+			transition-duration: 0.25s
+			color: #000
+
+			&:hover
+				color: #2E3F7F 
+
+			& > .svg
+				display: block
+				margin-right: 9px
+
+				path
+					stroke: #2E3F7F
+
+		.contacts-mail__link
+			display: flex
+			align-items: center
+			line-height: 100%
+			transition-duration: 0.25s
+			color: #000
+
+			&:hover
+				color: #2E3F7F
+
+			& > .svg
+				display: block
+				margin-right: 9px
+
+				path
+					stroke: #2E3F7F
+
+		.header__contacts-soc
+			display: flex
+			justify-content: flex-end
+
+		.contacts-soc__link
+			display: flex
+			width: 34px
+			height: 34px
+			align-items: center
+			justify-content: center
+			background: var(--general-white)
+			border-radius: 50%
+
+			& + .contacts-soc__link
+				margin-left: 12px
+
+		.header__info
+			display: flex
+
+		.contacts-service__link
+			display: flex
+			height: 50px
+			padding: 0 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-white)
+			background: var(--general-accent)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-left: 40px
+
+			&:hover
+				background: var(--general-white)
+				color: var(--general-accent)
+
+		.contacts-call__link
+			display: flex
+			height: 50px
+			padding: 0 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-accent)
+			background: var(--general-white)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-left: 40px
+
+			&:hover
+				background: var(--general-accent)
+				color: var(--general-white)
+
+	&.ver_08
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 16px
+			padding-bottom: 16px
+			display: flex
+			min-height: 90px
+
+		.header__logo
+			display: flex
+			justify-content: center
+			margin-right: auto
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__nav
+			display: flex
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+			margin: 0 20px
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--general-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid #DEDEDE
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--general-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+	&.ver_09
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 30px
+			padding-bottom: 30px
+			display: flex
+
+			& > *:last-child
+				margin-right: 0
+
+		.header__logo
+			display: flex
+			justify-content: center
+			margin-right: 60px
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__form
+			display: flex
+			margin: 0 auto
+			flex: 1
+			margin-right: 60px
+
+		.header-search
+			display: flex
+			flex-direction: column
+			width: 100%
+
+		.header-search__label
+			display: block
+			position: relative
+
+		.header-search__input
+			width: 100%
+			height: 46px
+			border: 1px solid #fff
+			border-radius: 25px
+			padding: 0 25px
+			font-family: $font
+			background: var(--other-accent-light)
+
+			&::-webkit-input-placeholder
+				color: #808285
+
+			&::-moz-placeholder
+				color: #808285
+
+			&:-ms-input-placeholder
+				color: #808285
+
+		.header-search__submit
+			position: absolute
+			height: 50px
+			width: 50px
+			right: 1px
+			top: 1px
+			border: none
+			background: transparent
+
+		.header__info
+			display: flex
+			align-items: center
+			margin-right: 60px
+
+			& > a:first-child
+				margin-right: 35px
+
+		.header__fav
+			display: flex
+			align-items: center
+			color: #000
+			transition-duration: 0.25s
+
+			&:hover
+				color: var(--general-accent)
+
+		.header-fav__icon
+			margin-right: 13px
+		
+		.header__basket
+			display: flex
+			align-items: center
+			margin-left: auto
+
+			&:hover
+
+				.header-basket__price
+					color: var(--general-accent)
+
+		.header-basket__icon
+			display: flex
+			width: 26px
+			height: 26px
+			align-items: center
+			justify-content: center
+			margin-right: 10px
+			position: relative
+
+		.header-basket__count
+			position: absolute
+			font-size: 0.75rem
+			color: #fff
+			background: var(--general-accent)
+			padding: 1px 5px
+			border-radius: 9px
+			right: -6px
+			top: -6px
+
+		.header-basket__info
+			display: flex
+			flex-direction: column
+
+		.header-basket__price
+			font-size: 1rem
+			font-weight: 600
+			color: #000
+
+		.header__auth
+			display: flex
+			height: 50px
+			padding: 0 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-accent)
+			background: var(--general-white)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-right: 60px
+
+			&:hover
+				background: var(--general-accent)
+				color: var(--general-white)
+
+	&.ver_10
+		background: var(--white-bg-color)
+
+		.container-fluid
+			padding-top: 30px
+			padding-bottom: 30px
+			display: flex
+
+			& > *:last-child
+				margin-right: 0
+
+		.header__logo
+			display: flex
+			justify-content: center
+			margin-right: 60px
+
+		.header__logo-link
+			display: block
+
+		.header__logo-img
+			display: block
+			width: 175px
+
+		.header__form
+			display: flex
+			margin: 0 auto
+			flex: 1
+
+		.header-search
+			display: flex
+			flex-direction: column
+			width: 100%
+			margin-right: 60px
+
+		.header-search__label
+			display: block
+			position: relative
+
+		.header-search__input
+			width: 100%
+			height: 46px
+			border: 1px solid #fff
+			border-radius: 25px
+			padding: 0 25px
+			font-family: $font
+			background: var(--other-accent-light)
+
+			&::-webkit-input-placeholder
+				color: #808285
+
+			&::-moz-placeholder
+				color: #808285
+
+			&:-ms-input-placeholder
+				color: #808285
+
+		.header-search__submit
+			position: absolute
+			height: 50px
+			width: 50px
+			right: 1px
+			top: 1px
+			border: none
+			background: transparent
+
+		.header__info
+			display: flex
+			align-items: center
+			margin-right: 32px
+
+			& > a:first-child
+				margin-right: 24px
+
+		.header__fav
+			display: flex
+			align-items: center
+			flex-direction: column
+			color: var(--general-gray)
+			transition-duration: 0.25s
+
+			&:hover
+				color: var(--general-accent)
+
+		.header-fav__icon
+			margin-bottom: 7px
+		
+		.header__basket
+			display: flex
+			align-items: center
+			margin-left: auto
+			flex-direction: column
+			
+			&:hover
+
+				.header-basket__price
+					color: var(--general-accent)
+
+		.header-basket__icon
+			display: flex
+			width: 26px
+			height: 26px
+			align-items: center
+			justify-content: center
+			margin-right: 10px
+			position: relative
+
+			img
+				margin-bottom: 4px
+
+		.header-basket__count
+			position: absolute
+			font-size: 0.75rem
+			color: #fff
+			background: var(--general-accent)
+			padding: 1px 5px
+			border-radius: 9px
+			right: -6px
+			top: -6px
+
+		.header-basket__info
+			display: flex
+			flex-direction: column
+
+		.header-basket__price
+			font-size: 1rem
+			font-weight: 600
+			color: var(--general-gray)
+			transition-duration: 0.25s
+
+			
+
+		.header__auth
+			display: flex
+			height: 50px
+			padding: 0 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-accent)
+			background: var(--general-white)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			margin-right: 32px
+
+			&:hover
+				background: var(--general-accent)
+				color: var(--general-white)
+
+		.header__catalog
+			display: flex
+			height: 50px
+			padding: 0 19px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-accent)
+			background: var(--general-white)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+
+			&.open
+
+				.header__catalog-close
+					display: block
+
+				.header__catalog-open
+					display: none
+
+			.svg
+				margin-right: 13px
+
+			&:hover
+				background: var(--general-accent)
+				color: var(--general-white)
+
+				.svg
+
+					path
+						stroke: #fff
+
+		.header__catalog-close
+			display: none
+
+			path
+				stroke: var(--general-accent)
+
+		.header__nav
+			display: flex
+			margin: 0 auto
+
+		.header__nav-list
+			display: flex
+			list-style: none
+			padding: 0
+			margin: 0
+
+		.header__nav-item
+			position: relative
+			margin: 0 20px
+
+			&.parent
+
+				&:hover
+					
+					.header__nav-childs-list
+						opacity: 1
+						visibility: visible
+						margin-top: 0
+
+				& > a
+
+					&::after
+						content: ''
+						background: url(/i/icon__arrow.svg) no-repeat
+						display: block
+						width: 8.5px
+						height: 5.5px
+						margin-left: 5px
+
+		.header__nav-link
+			padding-top: 6px
+			padding-bottom: 6px
+			color: var(--general-black)
+			font-weight: 600
+			transition-duration: 0.25s
+			position: relative
+			display: flex
+			align-items: center
+
+			&:hover
+				color: var(--link-hover)
+
+		.header__nav-childs-list
+			list-style: none
+			padding: 0
+			margin: 0
+			position: absolute
+			background: #FFFFFF
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+			border-radius: 18px
+			left: 50%
+			transform: translateX(-50%)
+			opacity: 0
+			visibility: hidden
+			margin-top: 25px
+			transition-duration: 0.25s
+			z-index: 2
+
+		.header__nav-childs-item
+
+			& + .header__nav-childs-item
+				border-top: 1px solid #DEDEDE
+
+		.header__nav-childs-link
+			display: flex
+			padding: 6px 0
+			color: var(--general-black)
+			transition-duration: 0.25s
+			white-space: nowrap
+			padding: 16px 20px
+
+			&:hover
+				color: var(--link-hover)
+
+.main-screen
+	
+	&.ver_01
+		height: 940px
+		position: relative
+		overflow: hidden
+
+		.container-fluid
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+		.main-screen__bg
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			z-index: -1
+
+		.main-screen__title
+			color: var(--general-black)
+			font-size: 3.5rem
+			font-weight: bold
+			line-height: 120%
+			width: 50%
+			margin-bottom: 32px
+
+		.main-screen__desc
+			width: 35%
+			color: var(--general-gray)
+			font-size: 1.25rem
+			line-height: 140%
+			margin-bottom: 46px
+	
+	&.ver_02
+		height: 940px
+		position: relative
+		overflow: hidden
+
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+			background: linear-gradient(180deg, rgba(35, 31, 32, 0.8) 0%, rgba(35, 31, 32, 0.6) 100%)
+
+		.container-fluid
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			text-align: center
+
+		.main-screen__bg
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			z-index: -2
+
+		.main-screen__label
+			color: var(--general-white)
+			margin-bottom: 24px
+			text-transform: uppercase
+			letter-spacing: 0.02em
+
+		.main-screen__title
+			color: var(--general-white)
+			font-size: 3.25rem
+			font-weight: bold
+			line-height: 120%
+			width: 80%
+			margin-bottom: 32px
+
+		.main-screen__desc
+			width: 55%
+			color: var(--other-line)
+			font-size: 1.25rem
+			line-height: 140%
+			margin-bottom: 46px
+
+		.main-screen__buttons
+			display: flex
+
+			.button:first-child
+				margin-right: 24px
+
+		.main-screen__more
+			background: var(--general-white)
+			color: var(--general-accent)
+
+			&:hover
+				color: var(--general-white)
+				background: transparent
+				border: 1px solid #fff
+
+		.main-screen__order
+			background: transparent
+			border: 1px solid #fff
+
+			&:hover
+				background: var(--general-white)
+				color: var(--general-accent)
+	
+	&.ver_03
+		height: 940px
+		position: relative
+		overflow: hidden
+		background: var(--general-white)
+
+		.container-fluid
+			display: flex
+			flex-direction: column
+			justify-content: center
+
+		.main-screen__bg
+			position: absolute
+			left: 50%
+			height: 100%
+			z-index: -1
+
+		.main-screen__title
+			color: var(--general-black)
+			font-size: 3.25rem
+			font-weight: bold
+			line-height: 120%
+			width: 50%
+			margin-bottom: 32px
+
+		.main-screen__desc
+			width: 35%
+			color: var(--general-gray)
+			font-size: 1.25rem
+			line-height: 140%
+			margin-bottom: 46px
+
+		.main-screen__slider
+			display: flex
+			height: 100%
+			
+			.slick-track
+				display: flex
+				height: 100%
+
+		.main-screen__slider-item
+			align-items: center
+			height: 100%
+			display: flex
+			position: relative
+			overflow: hidden
+
+		.main-screen__slider-nav
+			position: absolute
+			z-index: 2
+			left: 50%
+			margin-left: 60px
+			bottom: 40px
+			display: flex
+
+			.slider-nav__button
+				width: 54px
+				height: 54px
+				border-radius: 50%
+				margin: 0
+				border: none
+				background: #fff
+				cursor: pointer
+				padding: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				transition-duration: 0.25s
+
+				path
+					stroke: var(--general-accent)
+
+				&:hover
+					background: var(--general-accent)
+
+					path
+						stroke: var(--general-white)	
+
+			.slider-nav__prev
+				margin-right: 24px
+
+			.slider-nav__next
+	
+	&.ver_04
+		height: 940px
+		position: relative
+		overflow: hidden
+
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+			background: linear-gradient(180deg, rgba(35, 31, 32, 0.8) 0%, rgba(35, 31, 32, 0.6) 100%)
+
+		.container-fluid
+			display: flex
+			align-items: center
+
+		.main-screen__wrap
+			display: flex
+			justify-content: space-between
+
+		.main-screen__info
+			padding-right: 50px
+
+		.main-screen__bg
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			z-index: -2
+			top: 0
+
+		.main-screen__title
+			color: var(--general-white)
+			font-size: 3.875rem
+			font-weight: bold
+			line-height: 120%
+			margin-bottom: 32px
+
+		.main-screen__desc
+			color: var(--other-line)
+			font-size: 1.25rem
+			line-height: 140%
+			width: 75%
+
+		.main-screen__form
+			min-width: 566px
+			background: var(--general-white)
+			border-radius: 30px
+			padding: 60px
+
+		.form__content
+			display: flex
+			flex-direction: column
+
+		.form__label
+			display: block
+			margin-bottom: 24px
+
+		.form__input
+			height: 60px
+			width: 100%
+			border: 1px solid var(--other-line)
+			border-radius: 30px
+			padding: 22px 24px
+			font-family: $font
+			color: var(--general-gray)
+			font-size: 1rem
+			transition-duration: 0.25s
+
+			&:focus
+				box-shadow: 0 0 20px rgba(0,0,0,.05)
+
+		.form__button
+			border: none
+			font-family: $font
+			width: 100%
+			font-size: 1rem
+			cursor: pointer
+			margin-bottom: 20px
+
+			&:disabled
+				cursor: default
+				opacity: 0.75
+
+		.form__checkbox
+			opacity: 0
+			visibility: hidden
+			position: absolute
+
+			&:checked + .form__label-checkbox
+
+				&::after
+					display: block
+				
+		.form__check
+			margin-left: 60px
+
+		.form__label-checkbox
+			line-height: 130%
+			font-size: 0.875rem
+			position: relative
+			cursor: pointer
+			user-select: none
+
+			&::before
+				content: ''
+				width: 14px
+				height: 14px
+				border: 1px solid var(--general-accent)
+				display: block
+				border-radius: 3px
+				cursor: pointer
+				position: absolute
+				top: 3px
+				left: -22px
+				cursor: pointer
+
+			&::after
+				content: ''
+				width: 14px
+				height: 14px
+				background: url(/i/icon__checkbox-d.svg) no-repeat 50% 50%
+				display: none
+				cursor: pointer
+				position: absolute
+				top: 3px
+				left: -22px
+				cursor: pointer
+
+footer
+
+	&.ver_01
+
+		a
+			color: var(--general-white)
+
+		.footer__top
+			background: var(--bg-dark)
+			color: var(--general-white)
+
+			.container-fluid
+				padding-top: 100px
+				padding-bottom: 100px
+				display: flex
+
+			.footer__logo
+				margin-bottom: 50px
+				display: block
+
+			.footer__contacts
+				display: flex
+				flex-direction: column
+				font-size: 1.125rem
+				line-height: 1.125rem
+
+				.svg
+					margin-right: 13.5px
+
+					path
+						stroke: #fff
+
+			.footer__contacts-phone
+				margin-bottom: 20px
+
+			.footer__contacts-mail
+				margin-bottom: 20px
+
+				svg
+					margin-left: 1.5px
+
+			.footer__contacts-soc
+				display: flex
+				margin-top: 50px
+
+			.contacts-soc__link
+				display: flex
+				width: 34px
+				height: 34px
+				align-items: center
+				justify-content: center
+				background: var(--other-accent-light)
+				border-radius: 50%
+
+				& + .contacts-soc__link
+					margin-left: 16px
+
+			.footer__left
+
+			.footer__right
+				display: flex
+				justify-content: flex-end
+
+			.footer__nav
+				width: 33.33%
+				margin-left: 55px
+
+			.footer__nav-title
+				font-size: 1.125rem
+				margin-bottom: 24px
+
+			.footer__nav-list
+				list-style: none
+				padding: 0
+				margin: 0
+
+			.footer__nav-item
+
+				& + .footer__nav-item
+					margin-top: 20px
+
+			.footer__nav-link
+				font-size: 0.875rem
+				color: var(--other-gray-dark)
+				line-height: 1.25rem
+
+		.footer__bottom
+			background: var(--bg-dark-light)
+
+			.container-fluid
+				min-height: 100px
+				padding-top: 20px
+				padding-bottom: 20px
+				display: flex
+				align-items: center
+
+			.footer__copy
+				width: 25%
+				font-size: 0.875rem
+				color: var(--general-white)
+
+			.footer__create
+				width: 100%
+				max-width: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				color: var(--other-gray-dark)
+				font-size: 0.875rem
+
+				&:first-child
+					margin-left: auto
+
+				&:last-child
+					margin-right: auto
+
+				img
+					margin-left: 8px
+
+			.footer__privacy
+				width: 25%
+				font-size: 0.875rem
+
+			.footer__privacy-link
+				color: var(--general-white)
+
+	&.ver_02
+
+		a
+			color: var(--general-white)
+
+		.footer__top
+			background: var(--bg-dark-light)
+			color: var(--general-white)
+
+			.container-fluid
+				padding-top: 15px
+				padding-bottom: 15px
+				min-height: 98px
+				display: flex
+
+			.footer__nav-list
+				display: flex
+				list-style: none
+				padding: 0
+				margin: 0
+
+			.footer__nav-item
+
+			.footer__nav-link
+				display: block
+				margin: 0 27px
+				font-size: 1.125rem
+
+		.footer__bottom
+			background: var(--other-accent-light)
+
+			.container-fluid
+				min-height: 100px
+				padding-top: 80px
+				padding-bottom: 60px
+				display: flex
+				flex-direction: column
+
+			.footer__logo
+				margin-bottom: 50px
+				display: block
+
+			.footer__contacts-soc
+				display: flex
+				margin-bottom: 60px
+
+			.contacts-soc__link
+				display: flex
+				width: 46px
+				height: 46px
+				align-items: center
+				justify-content: center
+				background: var(--general-accent)
+				border-radius: 50%
+				margin: 0 12px
+
+				.svg
+					transform: scale(1.25)
+
+					path
+						fill: #fff
+
+			.footer__copy
+				font-size: 0.875rem
+				color: var(--general-gray)
+				margin-bottom: 40px
+
+			.footer__create
+				width: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				color: var(--other-gray-dark)
+				font-size: 0.875rem
+				min-height: 55px
+
+				img
+					margin-left: 8px
+
+			.footer__privacy-link
+				color: var(--general-accent)
+
+	&.ver_03
+
+		.footer__top
+			background: var(--bg-light)
+
+			.container-fluid
+				padding-top: 20px
+				padding-bottom: 20px
+				min-height: 100px
+				display: flex
+
+			.footer__nav-list
+				display: flex
+				list-style: none
+				padding: 0
+				margin: 0
+
+			.footer__nav-item
+
+				& + .footer__nav-item
+					margin-left: 52px
+
+			.footer__nav-link
+				display: block
+				font-size: 1.125rem
+
+		.footer__bottom
+			background: var(--general-white)
+
+			.container-fluid
+				padding-top: 80px
+				padding-bottom: 80px
+				display: flex
+
+			.footer__logo
+				margin-bottom: 40px
+				display: block
+
+			.footer__contacts-soc
+				display: flex
+
+			.contacts-soc__link
+				display: flex
+				width: 42px
+				height: 42px
+				align-items: center
+				justify-content: center
+				background: var(--other-accent-light)
+				border-radius: 50%
+
+				& + .contacts-soc__link
+					margin-left: 16px
+
+				.svg
+					transform: scale(1.25)
+
+					path
+						
+
+			.footer__copy
+				font-size: 0.875rem
+				color: var(--general-gray)
+				margin-bottom: 12px
+
+			.footer__create
+				display: flex
+				color: var(--general-accent)
+				font-size: 0.875rem
+
+				img
+					margin-left: 8px
+
+			.footer__privacy-link
+				color: var(--general-gray)
+				margin-bottom: 38px
+				font-size: 0.875rem
+				line-height: 1.25rem
+				margin-bottom: 38px
+				display: block
+
+			.footer__subtitle
+				font-size: 1.125rem
+				margin-bottom: 24px
+				font-weight: 700
+
+			.footer__adress
+				font-size: 1.125rem
+				line-height: 1.5rem
+				color: var(--general-gray)
+				margin-bottom: 40px
+
+			.footer__contacts-phone
+				font-size: 1.375rem
+				line-height: 1.625rem
+				margin-bottom: 12px
+				display: block
+
+			.footer__contacts-mail
+				font-size: 1.375rem
+				line-height: 1.625rem
+				margin-bottom: 24px
+				display: block
+
+			.footer__contacts-btn
+				display: block
+				min-width: 260px
+				height: 60px
+				display: flex
+				align-items: center
+				justify-content: center
+				background: var(--general-accent)
+				border-radius: 30px
+				color: #fff
+				transition-duration: 0.25s
+
+				&:hover
+					background: var(--bg-dark-light)
+
+
+		.scroll__up
+			width: 60px
+			height: 60px
+			background: var(--general-white)
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+
+	&.ver_04
+
+		.footer__top
+			background: var(--bg-dark-light)
+
+			.container-fluid
+				padding-top: 40px
+				padding-bottom: 40px
+				display: flex
+
+			.footer__form-title
+				font-size: 1.875rem
+				line-height: 2.25rem
+				color: var(--general-white)
+
+			.footer__form-wrap
+				width: 715px
+
+			.footer__form-form
+				display: flex
+				flex-direction: column
+
+			.footer__form-input
+				flex: 1
+				height: 60px
+				border: 1px solid #fff
+				padding-left: 24px
+				padding-right: 24px
+				border-radius: 30px
+				background: transparent
+				font-family: $font
+				font-size: 1rem
+				color: #fff
+
+				&::-webkit-input-placeholder
+					color: #fff
+
+				&::-moz-placeholder
+					color: #fff
+
+				&:-ms-input-placeholder
+					color: #fff
+
+			.footer__form-button
+				height: 60px
+				width: 220px
+				border-radius: 30px
+				display: flex
+				align-items: center
+				justify-content: center
+				margin-left: 30px
+				border: 1px solid #fff
+				font-family: $font
+				font-size: 1rem
+
+			.footer__form-row
+				display: flex
+
+				& + .footer__form-row
+					margin-top: 14px
+
+			.footer__form-chekbox__label
+				color: #fff
+				font-size: 0.875rem
+				line-height: 1.125rem
+				position: relative
+				padding-left: 22px
+				cursor: pointer
+
+				a
+					color: #ffffff
+					text-decoration: underline
+					
+					&:hover
+						text-decoration: none
+				
+				&::after
+					position: absolute
+					left: 0
+					top: 0
+					content: ''
+					width: 14px
+					height: 14px
+					border-radius: 3px
+					border: 1px solid #fff
+
+				&::before
+					content: ''
+					width: 9px
+					height: 7px
+					position: absolute
+					left: 3px
+					top: 3px
+					background: url(/i/icon__checkbox.svg) no-repeat
+					display: none
+
+			.footer__form-checkbox
+				opacity: 0
+				position: absolute
+
+				&:checked + .footer__form-chekbox__label
+
+					&::before
+						display: block
+
+		.footer__bottom
+			background: var(--general-white)
+
+			.container-fluid
+				padding-top: 80px
+				padding-bottom: 80px
+				display: flex
+
+			.footer__col
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+			.footer__logo
+				margin-bottom: 40px
+				display: block
+
+			.footer__contacts-soc
+				display: flex
+				margin-top: auto
+
+			.contacts-soc__link
+				display: flex
+				width: 34px
+				height: 34px
+				align-items: center
+				justify-content: center
+				background: var(--other-accent-light)
+				border-radius: 50%
+
+				& + .contacts-soc__link
+					margin-left: 16px
+
+				.svg
+
+					path
+						
+			.footer__copy
+				font-size: 0.875rem
+				color: var(--general-gray)
+				margin-bottom: 12px
+
+			.footer__create
+				display: flex
+				color: var(--general-gray)
+				font-size: 0.875rem
+				margin-top: auto
+				flex-direction: column
+				align-items: flex-start
+				margin-top: auto
+
+				img
+					margin-top: 8px
+
+			.footer__privacy-link
+				color: var(--general-black)
+				margin-top: auto
+				font-size: 0.875rem
+				line-height: 1.25rem
+				display: block
+
+				&:hover
+					text-decoration: underline
+
+			.footer__subtitle
+				font-size: 1.125rem
+				margin-bottom: 24px
+				font-weight: 700
+
+				& + *
+					margin-top: 0
+
+			.footer__nav-list
+				list-style: none
+				padding: 0
+				margin: 0
+				column-count: 2
+				column-gap: 50px
+
+			.footer__nav-item
+				margin-bottom: 20px
+
+			.footer__nav-link
+				display: block
+				line-height: 1.375rem
+				color: var(--general-gray)
+
+				&:hover
+					text-decoration: underline
+
+			.footer__contacts-city
+				line-height: 1.375rem
+				margin-bottom: 20px
+				align-items: center
+				display: flex
+
+				.svg
+					margin-right: 13.5px
+
+			.footer__contacts-phone
+				line-height: 1.375rem
+				margin-bottom: 20px
+				display: flex
+				color: var(--general-black)
+				align-items: center
+
+				.svg
+					margin-right: 13.5px
+
+			.footer__contacts-mail
+				line-height: 1.375rem
+				margin-bottom: 20px
+				display: flex
+				color: var(--general-black)
+				align-items: center
+
+				.svg
+					margin-right: 13.5px
+					margin-left: 1.5px
+
+			.footer__contacts-btn
+				display: block
+				min-width: 260px
+				height: 60px
+				display: flex
+				align-items: center
+				justify-content: center
+				background: var(--general-accent)
+				border-radius: 30px
+				color: #fff
+				transition-duration: 0.25s
+
+				&:hover
+					background: var(--bg-dark-light)
+
+
+		.scroll__up
+			width: 60px
+			height: 60px
+			background: var(--general-white)
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+
+	&.ver_05
+
+		a
+			color: var(--general-white)
+
+		.footer__top
+			background: var(--bg-dark)
+			color: var(--general-white)
+
+			.container-fluid
+				padding-top: 100px
+				padding-bottom: 40px
+				display: flex
+
+			.footer__logo
+				margin-bottom: 50px
+				display: block
+
+			.footer__contacts
+				display: flex
+				flex-direction: column
+
+				.svg
+					margin-right: 13.5px
+
+					path
+						stroke: #fff
+
+			.footer__contacts-phone
+				margin-bottom: 20px
+				font-size: 1.5rem
+				white-space: nowrap
+
+			.footer__contacts-time
+				font-size: .875rem
+				color: var(--other-gray-dark)
+				display: inline
+
+			.footer__contacts-mail
+				margin-bottom: 20px
+
+				svg
+					margin-left: 1.5px
+
+			.footer__contacts-city
+				margin-bottom: 40px
+
+			.footer__form-title
+				font-size: 1.125rem
+				line-height: 1.125rem
+				color: var(--general-white)
+				margin-bottom: 16px
+
+			.footer__form-wrap
+				max-width: 380px
+				width: 100%
+
+			.footer__form-form
+				display: flex
+				flex-direction: column
+
+			.footer__form-input
+				height: 58px
+				padding-left: 24px
+				padding-right: 24px
+				border-radius: 30px
+				font-family: $font
+				font-size: 1rem
+				color: #808285
+				border: none
+				width: 100%
+
+				&::-webkit-input-placeholder
+					color: #808285
+
+				&::-moz-placeholder
+					color: #808285
+
+				&:-ms-input-placeholder
+					color: #808285
+
+			.footer__form-button
+				height: 56px
+				width: 56px
+				border-radius: 28px
+				display: flex
+				align-items: center
+				justify-content: center
+				border: none
+				background: transparent
+				font-family: $font
+				font-size: 1rem
+				position: absolute
+				top: 0
+				right: 0
+				cursor: pointer
+
+			.footer__form-row
+				display: flex
+				position: relative
+
+				& + .footer__form-row
+					margin-top: 14px
+
+			.footer__form-chekbox__label
+				color: #fff
+				font-size: 0.875rem
+				line-height: 1.125rem
+				position: relative
+				padding-left: 22px
+				cursor: pointer
+
+				a
+					color: #ffffff
+					text-decoration: underline
+					
+					&:hover
+						text-decoration: none
+				
+				&::after
+					position: absolute
+					left: 0
+					top: 0
+					content: ''
+					width: 14px
+					height: 14px
+					border-radius: 3px
+					border: 1px solid #fff
+
+				&::before
+					content: ''
+					width: 9px
+					height: 7px
+					position: absolute
+					left: 3px
+					top: 3px
+					background: url(/i/icon__checkbox.svg) no-repeat
+					display: none
+
+			.footer__form-checkbox
+				opacity: 0
+				position: absolute
+
+				&:checked + .footer__form-chekbox__label
+
+					&::before
+						display: block		
+
+			.footer__contacts-soc
+				display: flex
+				margin-top: 50px
+
+			.contacts-soc__link
+				display: flex
+				width: 34px
+				height: 34px
+				align-items: center
+				justify-content: center
+				background: var(--bg-dark-light)
+				border-radius: 50%
+
+				& + .contacts-soc__link
+					margin-left: 16px
+
+				svg
+
+					path
+						fill: #fff
+
+			.footer__nav
+
+			.footer__title
+				font-size: 1.375rem
+				line-height: 1.375rem
+				border-bottom: 1px solid #29314F
+				padding-bottom: 24px
+				margin-bottom: 32px
+
+			.footer__nav-list
+				list-style: none
+				padding: 0
+				margin: 0
+
+				&.two__cols
+					column-count: 2
+					column-gap: 60px
+
+			.footer__nav-item
+
+				& + .footer__nav-item
+					margin-top: 20px
+
+			.footer__nav-link
+				color: var(--general-white)
+
+				&:hover
+					text-decoration: underline
+
+		.footer__bottom
+			background: var(--bg-dark)
+			color: var(--general-gray)
+
+			.line__top
+				border-color: var(--bg-dark-light)
+
+			.container-fluid
+				min-height: 70px
+				display: flex
+				align-items: center
+
+			.footer__copy
+				width: 25%
+				font-size: 0.875rem
+				color: var(--other-gray-dark)
+
+			.footer__create
+				width: 100%
+				max-width: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				color: var(--other-gray-dark)
+				font-size: 0.875rem
+
+				&:first-child
+					margin-left: auto
+
+				&:last-child
+					margin-right: auto
+
+				img
+					margin-left: 8px
+
+			.footer__privacy
+				width: 25%
+
+			.footer__privacy-link
+				color: var(--other-gray-dark)
+				font-size: 0.875rem
+
+.animate__menu
+
+	#nav__mobile
+		transform: translateX(0%)
+
+.animate__treemenu
+
+	#nav__treemenu
+		opacity: 1
+		margin-left: 0
+		z-index: 2
+
+.nav__mobile-close
+	display: block
+	position: relative
+	z-index: 2
+
+#nav__mobile-bg
+	position: fixed
+	z-index: 2
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.5)
+	display: none
+
+#nav__treemenu
+	position: absolute
+	width: 100%
+	top: 110px
+	border-top: 1px solid #DEDEDE
+	opacity: 0
+	transition-duration: 0.25s
+	margin-left: -25px
+
+	.container-fluid
+		padding: 0
+
+	.nav__treemenu__list
+		background: #fff
+		margin: 0
+		padding: 15px
+		list-style: none
+		position: relative
+
+		&.level__two
+			position: absolute
+			left: 100%
+			top: 0
+			bottom: 0
+			opacity: 0
+			visibility: hidden
+			margin-left: 25px
+			transition-duration: 0.25s
+
+			&::before
+				content: ''
+				width: 1px
+				position: absolute
+				top: 0
+				bottom: 0
+				background: #DEDEDE
+				left: 0
+
+		.nav__treemenu__item
+			width: 280px
+
+			&:hover
+
+				> .nav__treemenu__link 
+					background: var(--other-accent-light)
+					border-radius: 8px
+
+					&.has__children
+
+						&::after
+							opacity: 1
+
+				
+				.nav__treemenu__list
+					opacity: 1
+					visibility: visible
+					margin-left: 0
+			
+			.nav__treemenu__link 
+				position: relative
+				z-index: 2
+				display: block
+				padding: 16px 12px
+				color: #000
+				transition-duration: 0.25s
+				display: flex
+				justify-content: space-between
+
+				&.has__children
+
+					&::after
+						display: block
+						content: ''
+						width: 7px
+						height: 12px
+						background: url(/i/icon__arrow-tree.svg) no-repeat
+						margin-top: 1px
+						opacity: 0.5
+
+					
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			background: #fff
+			right: calc(100%)
+			width: 9999px
+			z-index: 0
+	
+#nav__mobile
+	background: #fff
+	width: 320px
+	box-shadow: 0 0 20px rgba(0,0,0,.5)
+	position: fixed
+	right: 0
+	top: 0px
+	height: 100%
+	z-index: 5
+	overflow-x: auto
+	padding: 40px
+	transform: translateX(200%)
+	transition-duration: 0.25s
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+
+	.mobile__nav
+		width: 100%
+
+	.mobile__list
+		list-style: none
+		padding: 20px 0
+		margin: 0
+
+		.mobile__item
+			margin-bottom: 32px
+
+			&.open
+
+				.mobile__link
+
+					&.has__children
+
+						&:after
+							transform: rotate(180deg)
+
+		.mobile__link
+			font-size: 1.5rem
+			display: block
+			position: relative
+			color: var(--general-black)
+			transition-duration: 0.25em
+
+			&:hover
+				color: var(--general-accent)
+
+			&.has__children
+
+				&:after
+					content: ''
+					background: url(/i/arrow.svg) no-repeat 50% 50%
+					height: 47px
+					width: 47px
+					display: block
+					position: absolute
+					top: 0px
+					right: 0
+					transition-duration: 0.25s
+
+		.mobile__list-child
+			list-style: none
+			padding: 0 0 0 0px
+			margin: 0
+			background: rgba(0,0,0,.05)
+			display: none
+
+			.mobile__item-child
+				position: relative
+
+				&.open
+
+					.mobile__link-child
+
+						&.has__children
+
+							&:after
+								transform: rotate(180deg)
+
+				.mobile__link-child
+
+					&.has__children
+
+						&:after
+							content: ''
+							background: url(/i/arrow.svg) no-repeat 50% 50%
+							height: 47px
+							width: 47px
+							display: block
+							position: absolute
+							top: 0px
+							right: 0
+							transition-duration: 0.25s
+
+				.mobile__link-child
+					display: flex
+					align-items: center
+					padding: 10px 20px 10px 30px
+
+					img
+						margin-right: 15px
+
+			.mobile__list-child
+				list-style: none
+				padding: 0 0 0 0px
+				margin: 0
+				background: rgba(0,0,0,.05)
+
+				.mobile__item-child
+
+					.mobile__link-child
+						display: flex
+						align-items: center
+						padding: 10px 20px 10px 50px
+						
+	.mobile__info
+		display: flex
+		flex-direction: column
+		margin-top: auto
+		width: 100%
+
+		.bar-info__phone
+			color: var(--general-black)
+			font-size: 1.375rem
+			margin-bottom: 24px
+
+		.bar-info__call
+			display: flex
+			height: 50px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 700
+			color: var(--general-white)
+			background: var(--general-accent)
+			border: 1px solid var(--general-accent)
+			border-radius: 25px
+			transition-duration: 0.25s
+			width: 100%
+
+			&:hover
+				background: var(--general-white)
+				color: var(--general-accent)
+

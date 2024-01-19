@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="62.109.14.84" id="1792a336-9cdb-4b24-9b7f-e97f895ec781" port="22" customName="gptyres" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="gptyres" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="62.109.14.84" id="57b5def8-8fc5-48bf-91e4-ca2c140348da" port="22" customName="gptyres" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="gptyres" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="82.146.56.38" id="56412afa-aa8e-4412-9ec8-751b1a2240e0" port="22" customName="autoboss" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="autoboss" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

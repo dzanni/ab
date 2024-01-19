@@ -1,0 +1,382 @@
+	.center{text-align:center;}
+	.left{text-align:left;}
+	.right{text-align:right;}
+	.justify{text-align:justify;}
+	.Tahoma, .Tahoma *{font-family:Tahoma, Geneva, sans-serif !important;}
+	.Calibri, .Calibri *{font-family:Calibri !important;}
+	.Arial, .Arial *{font-family:Arial, Helvetica, sans-serif !important;}
+	.ComicSansMS, .ComicSansMS *{font-family:"Comic Sans MS", cursive !important}
+	.Isocpeur, .Isocpeur *{font-family:Isocpeur !important;}
+	.MonotypeCorsiva, .MonotypeCorsiva *{font-family:"Monotype Corsiva" !important;}
+	.Gabriola, .Gabriola *{font-family:"Gabriola" !important;}
+	.p12px, .p12px *{font-size:12px !important;}
+	.p14px, .p14px *{font-size:14px !important;}
+	.p16px, .p16px *{font-size:16px !important;}
+	.p18px, .p18px *{font-size:18px !important;}
+	.p20px, .p20px *{font-size:20px !important;}
+	.red, .red *{color:#900 !important;}
+	.blue, .blue *{color:#009 !important;}
+	.black, .black *{color:#000 !important;}
+	.grey, .grey *{color:#999 !important;}
+	.green, .green *{color:#090 !important;}	
+	img.right{
+		float:right;
+		margin:10px 0px 10px 10px;
+	}
+	img.left{
+		float:left;
+		margin:10px 10px 10px 0px;
+	}
+	
+	
+	.csEdit {
+		width: 800px;
+		overflow:hidden;
+	}
+	.csEdit .txtEdit, .csEdit .txtEditDiv{
+		width: 100%;
+		height:350px;
+	} 
+	.csEdit .txtEdit{
+		height:364px;
+	}
+	.csEdit .colorBlockSelector {
+		float:left;
+	}
+	.csEdit .colorBlockSelector .addColors{
+		position: absolute;
+		margin-top: 10px;
+		background: #fff;
+		box-shadow: 1px 1px 4px black;
+		padding: 5px;
+		max-width: 300px;
+		display:none;
+	}
+	.csEdit .colorBlockSelector .selectedColor, .csEdit .colorBlockSelector .addColors .colorBlock{
+		display:block; 
+		height:15px;
+		float:left;
+		margin:2px;
+		border: 1px solid #ccc;
+		width: 15px;
+	} 
+	.csEdit .FormatBlockHolder *{
+		margin:0px;
+		padding:5px;
+		border-bottom:1px solid #ccc;
+	}
+	.csEdit .FormatBlockHolder *:hover{
+		background:#eee;
+		cursor:pointer;
+	}
+	.csEdit .FormatBlockHolder{
+		box-shadow: 1px 1px 4px black;
+		position: absolute;
+		margin-top: 10px;
+		background:#fff;
+		display:none;
+		min-width: 380px;
+	}
+	.csEdit .topToolbar{
+		width:100%;
+		padding:5px;
+		border-bottom: 1px solid #ccc;
+		opacity:0.97;
+		position: absolute;
+		display:none;
+		background:#fff;
+	} 
+	.csEdit .topToolbar label{
+		display:inline-block;
+		width:75px;
+	} 
+	.csEdit .topToolbar input, .csEdit .topToolbar select{
+		margin-right: 20px !important;
+	}
+	.csEdit .tableInsertToolbar .cols, .csEdit .tableInsertToolbar .rows{
+		width: 25px; text-align:center;
+		margin-right:25px;
+	}
+	.csEdit input.longText{
+		width:300px;
+	}
+	.csEdit .toolbar{
+		box-shadow: 1px 1px 1px black;
+	}
+	.csEdit .toolbar input, .csEdit .toolbar select {
+		padding:3px;
+		margin:2px;
+		border: 1px solid #ccc;
+	}
+	.csEdit .topToolbar input[type="button"],.csEdit .toolbar input[type="submit"] {
+		background:#047EC8;
+		color:#fff;
+		padding:3px 10px;
+		border: 1px solid #35608E;
+		cursor:pointer;
+	}
+	.csEdit .topToolbar input[type="button"]:hover ,.csEdit .toolbar input[type="submit"]:hover  {
+		background:#0972B2;
+	}
+	.csEdit .topToolbar input[type="button"]:active ,.csEdit .toolbar input[type="submit"]:active  {
+		background:#339CDC;
+	} 
+	
+	.csEdit .editParamsTxt p{
+		margin:0px;
+		padding:3px;
+		border-bottom:1px dashed #eee;
+	}
+	.csEdit .editParamsTxt p a{
+		display:inline-block;
+		margin:0px 4px;
+		padding:1px 10px;
+		cursor:pointer;
+		text-decoration:none; 
+		color:#0972B2;
+	}
+	.csEdit .editParamsTxt p a span{
+		border-bottom:1px dashed #0972B2;
+	}
+	.csEdit .editParamsTxt p a:hover span, .csEdit .editParamsTxt p a.active span{
+		border-bottom:0px;
+	}
+	.csEdit .editParamsTxt p a.active{
+		border-radius: 5px;
+		border: #ccc;
+		background:#FFEFBF;
+	} 
+	.csEdit .editParamsTxt{
+		display:none;
+	}
+	.csEdit .txtEditDiv table{
+		border-collapse:collapse;
+	}
+	.csEdit .txtEditDiv table td, .csEdit .txtEditDiv table th{
+		padding:3px;
+		border:1px solid #ccc;
+	}
+	.csEdit .txtEditDiv table th{
+		font-weight:bold;
+	}
+		
+	.fileManager{
+		width:80%;
+		height:80%;
+		position:fixed;
+		top:10%;
+		left:10%;
+		display:none;
+	}
+	.fileManager iframe{
+		width:100%;
+		height:100%;
+		border:0px;
+	}
+	
+	.csEdit.visible .toolbar .html{
+		display:none;
+	}
+	.csEdit.html .toolbar .visible{
+		display:none;
+	}
+	
+	.csEdit.visible textarea.txtEdit{
+		display:none;
+	}
+	.csEdit.html div.txtEditDiv{
+		display:none;
+	}
+	
+	.csEdit .toolbar .toobarIcons{
+		overflow:hidden;
+	}
+	 
+	.csEdit .toolbar .toobarIcons input{
+		display: block;
+		overflow:hidden;
+		width:33px;
+		height:33px;  
+		float:left;
+		border:8px solid #fff;
+	}
+	.csEdit .toolbar .toobarIcons input:hover{
+		cursor:pointer;
+		border: 8px solid #036C87;
+	}
+	.csEdit .toolbar .saveBTN{
+		background:url(/core/i/img_txtEditor.png) -374px -16px no-repeat;
+	}
+	.csEdit .toolbar .mkHtml{
+		background:url(/core/i/img_txtEditor.png) 0px -16px no-repeat;
+	}
+	.csEdit .toolbar .mkVisible{
+		background:url(/core/i/img_txtEditor.png) -20px -16px no-repeat;
+	}
+	.csEdit .toolbar .undo{
+		background:url(/core/i/img_txtEditor.png) -39px -17px no-repeat;
+	}
+	.csEdit .toolbar .redo{
+		background:url(/core/i/img_txtEditor.png) -56px -17px no-repeat;
+	}
+	.csEdit .toolbar .bold{
+		background:url(/core/i/img_txtEditor.png) -76px -16px no-repeat;
+	}
+	.csEdit .toolbar .italic{
+		background:url(/core/i/img_txtEditor.png) -97px -16px no-repeat;
+	}
+	.csEdit .toolbar .H_picker{
+		background:url(/core/i/img_txtEditor.png) -117px -16px no-repeat;
+	}	
+	.csEdit .toolbar .addImg{
+		background:url(/core/i/img_txtEditor.png) -140px -16px no-repeat;
+	}
+	.csEdit .toolbar .mkLink{
+		background:url(/core/i/img_txtEditor.png) -162px -17px no-repeat;
+	}	
+	.csEdit .toolbar .unlink{
+		background:url(/core/i/img_txtEditor.png) -187px -17px no-repeat;
+	}
+	.csEdit .toolbar .table{
+		background:url(/core/i/img_txtEditor.png) -215px -16px no-repeat;
+	}
+	.csEdit .toolbar .insertUnorderedList{
+		background:url(/core/i/img_txtEditor.png) -243px -16px no-repeat;
+	}
+	.csEdit .toolbar .insertOrderedList{
+		background:url(/core/i/img_txtEditor.png) -266px -16px no-repeat;
+	}
+	.csEdit .toolbar .indent{
+		background:url(/core/i/img_txtEditor.png) -288px -16px no-repeat;
+	}
+	.csEdit .toolbar .outdent{
+		background:url(/core/i/img_txtEditor.png) -309px -16px no-repeat;
+	}
+	.csEdit .toolbar .insertHorizontalRule{
+		background:url(/core/i/img_txtEditor.png) -330px -16px no-repeat;
+	}
+	.csEdit .toolbar .paramsEdtTxt{
+		background:url(/core/i/img_txtEditor.png) -355px -16px no-repeat;
+	}
+	.csEdit .toolbar .removeFormat{
+		background:url(/core/i/img_txtEditor.png) -493px -16px no-repeat;
+	}
+	
+	.csEdit .toolbar .saveBTN:hover{
+		background:url(/core/i/img_txtEditor.png) -374px -51px no-repeat;
+	}
+	.csEdit .toolbar .mkHtml:hover{
+		background:url(/core/i/img_txtEditor.png) 0px -51px no-repeat;
+	}
+	.csEdit .toolbar .mkVisible:hover{
+		background:url(/core/i/img_txtEditor.png) -20px -51px no-repeat;
+	}
+	.csEdit .toolbar .undo:hover{
+		background:url(/core/i/img_txtEditor.png) -39px -52px no-repeat;
+	}
+	.csEdit .toolbar .redo:hover{
+		background:url(/core/i/img_txtEditor.png) -56px -52px no-repeat;
+	}
+	.csEdit .toolbar .bold:hover{
+		background:url(/core/i/img_txtEditor.png) -76px -51px no-repeat;
+	}
+	.csEdit .toolbar .italic:hover{
+		background:url(/core/i/img_txtEditor.png) -97px -51px no-repeat;
+	}
+	.csEdit .toolbar .H_picker:hover{
+		background:url(/core/i/img_txtEditor.png) -117px -51px no-repeat;
+	}	
+	.csEdit .toolbar .addImg:hover{
+		background:url(/core/i/img_txtEditor.png) -140px -51px no-repeat;
+	}
+	.csEdit .toolbar .mkLink:hover{
+		background:url(/core/i/img_txtEditor.png) -162px -52px no-repeat;
+	}	
+	.csEdit .toolbar .unlink:hover{
+		background:url(/core/i/img_txtEditor.png) -187px -52px no-repeat;
+	}
+	.csEdit .toolbar .table:hover{
+		background:url(/core/i/img_txtEditor.png) -215px -51px no-repeat;
+	}
+	.csEdit .toolbar .insertUnorderedList:hover{
+		background:url(/core/i/img_txtEditor.png) -243px -51px no-repeat;
+	}
+	.csEdit .toolbar .insertOrderedList:hover{
+		background:url(/core/i/img_txtEditor.png) -266px -51px no-repeat;
+	}
+	.csEdit .toolbar .indent:hover{
+		background:url(/core/i/img_txtEditor.png) -288px -51px no-repeat;
+	}
+	.csEdit .toolbar .outdent:hover{
+		background:url(/core/i/img_txtEditor.png) -309px -51px no-repeat;
+	}
+	.csEdit .toolbar .insertHorizontalRule:hover{
+		background:url(/core/i/img_txtEditor.png) -330px -51px no-repeat;
+	}
+	.csEdit .toolbar .paramsEdtTxt:hover{
+		background:url(/core/i/img_txtEditor.png) -355px -51px no-repeat;
+	}
+	.csEdit .toolbar .removeFormat:hover{
+		background:url(/core/i/img_txtEditor.png) -493px -51px no-repeat;
+	}
+	
+	.csEdit .toolbar .popupIcons{
+		display:none;
+		color:#fff;
+		background: #036c87;
+		position:absolute; 
+	}
+	.csEdit .toolbar .topToolbar, .csEdit .toolbar .popupIcons{
+		font-size:12px;
+		font-family:Tahoma, Geneva, sans-serif; 
+		padding:5px 10px;
+	}
+	
+	.csEdit a.close{
+		background: url(/core/i/img_txtEditor.png) -445px -17px no-repeat;
+		display:block;
+		float:right;
+		width:17px;
+		height:17px;
+	}
+	.csEdit a.close{
+		background:url(/core/i/img_txtEditor.png) -445px -17px no-repeat;
+		display:block;
+		float:right;
+		width:17px;
+		height:17px;
+	}
+	.csEdit a.close:hover{
+		margin-top:-1px;
+		cursor:pointer;
+		margin-bottom:1px;
+	}
+	
+	
+	.csEdit h1, .csEdit h2, .csEdit h3, .csEdit h4, .csEdit h5,.csEdit h6 {
+		background:none !important;
+		padding:0px !important;
+		margin:5px 0px !important;
+		font-weight: normal !important;
+		border: 0px ;
+		font-style:normal !important;
+	}
+	.csEdit h1{font-size:28px !important;}
+	.csEdit h2{font-size:24px !important;}
+	.csEdit h3{font-size:20px !important;}
+	.csEdit h4{font-size:18px !important;}
+	.csEdit h5{font-size:16px !important;}
+	.csEdit h6{font-size:14px !important;}
+	.csEdit .txtEditDiv{
+		padding-left:10px;
+	    overflow: scroll;
+	}
+	.csEdit .txtEditDiv div, .csEdit .txtEditDiv p, .csEdit .txtEditDiv ul, .csEdit .txtEditDiv ol{
+		margin:5px 0px;
+	}
+	.txtEditDiv ul, .txtEditDiv ol{
+		margin:2px 0px 2px 30px !important;
+	}
+	.txtEditDiv li{
+		margin:2px 0px 2px 30px;
+	}

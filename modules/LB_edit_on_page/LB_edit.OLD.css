@@ -1,0 +1,289 @@
+body{
+    margin-top:30px;
+}
+.LB_edit{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    background: rgba(0,0,0,70);
+    display: block;
+    width: 100%;
+    z-index: 200000000;
+    text-align: center;
+    opacity: 0.5;
+    font-family: Tahoma;
+}
+.LB_edit a{
+   display: inline-block;
+    color:#fff;
+    font-size: 14px;
+    text-decoration: underline;
+    padding:5px 10px;
+}
+.LB_edit a:hover{
+   text-decoration: none;
+}
+
+
+.LB_edit_element{
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    width: 55%;
+    text-align: center;
+}
+
+
+.LB_modal_block_form iframe{
+    width: 100%;
+    min-height: 600px;
+    border: 0px;
+}
+.cs_block_element{
+  min-height:100px;
+}
+.cs_block_element:hover{
+    background: rgba(0,0,0,0.5);
+}
+.cs_block_element:hover .LB_edit_element{
+   display: block;
+}
+.cs_block_element_hover {
+    background: rgba(0,0,0,0.5);
+}
+.cs_block_LB_edit_element {
+    display: block !important;
+}
+.LB_edit_icon{
+    display: block;
+    float: right;
+    width:30px;
+    height:30px;
+    margin:5px;
+    cursor: pointer;
+    background-size: contain;
+}
+.LB_edit_icon:hover::before{
+    content: "Добавить блок";
+    display: block;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 32px;
+    width: 235px;
+    font-size: 12px;
+    right: 3px;
+    text-align: center;
+    font-family:Tahoma;
+}
+.cs_block_element_none .LB_edit_icon{
+    display: none;
+}
+.cs_block_element_none{
+    background: #bfbfbf;
+}
+.cs_block_element_none .LB_edit_element {
+    display: block !important;
+    margin: auto;
+    position: relative;
+    width: 30px;
+}
+.cs_block_element_none .LB_edit__add{
+    display: block;
+}
+.LB_edit__add:hover::before {
+    content: "Добавить блок";
+}
+.LB_edit__edit:hover::before {
+    content: "Редактировать блок";
+}
+.LB_edit__up:hover::before {
+    content: "Поднять блок";
+}
+.LB_edit__down:hover::before {
+    content: "Переместить блок ниже";
+}
+.LB_edit__copy:hover::before {
+    content: "Скопировать блок";
+}
+.LB_edit__del:hover::before {
+    content: "Удалить блок";
+}
+.LB_edit_element .LB_edit__add {
+    background-image: url("/modules/LB_edit_on_page/i/add.png");
+}
+.LB_edit_element .LB_edit__edit {
+    background-image: url("/modules/LB_edit_on_page/i/edit.png");
+}
+.LB_edit_element .LB_edit__up {
+    background-image: url("/modules/LB_edit_on_page/i/up.png");
+}
+.LB_edit_element .LB_edit__down {
+    background-image: url("/modules/LB_edit_on_page/i/down.png");
+}
+.LB_edit_element .LB_edit__copy {
+    background-image: url("/modules/LB_edit_on_page/i/copy.png");
+}
+.LB_edit_element .LB_edit__del {
+    background-image: url("/modules/LB_edit_on_page/i/del.png");
+}
+
+
+
+.pop-up__form {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 780px;
+    background-color: #ffffff;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 40px 15px;
+}
+
+.pop-up__close {
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    float: right;
+}
+
+
+
+/*---------------------arcticmodal------------------------*/
+.arcticmodal-overlay,
+.arcticmodal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.arcticmodal-container {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+*:first-child + html .arcticmodal-container {
+    height: 100%;
+}
+
+.arcticmodal-container_i {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.arcticmodal-container_i2 {
+    padding: 24px;
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+}
+
+.arcticmodal-error {
+    padding: 20px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+}
+
+.arcticmodal-loading {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: #000 url(/i/ajax-loader.gif) no-repeat 50% 50%;
+}
+
+.LB_edit_element_modal .arcticmodal-close {
+    position: inherit;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    background-image: none;
+    cursor: pointer;
+    float: right;
+}
+.LB_edit_element_modal{
+    width: 1000px;
+    background:#fff;
+    padding:20px;
+    font-family:Tahoma;
+}
+.LB_edit_element_modal.LB_edit_small{
+    width:600px;
+}
+.LB_edit_element_modal .LB_modal_block_form__title{
+    font-size:20px;
+}
+.LB_edit_element_modal .LB_form_row{
+    margin:5px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.LB_edit_element_modal .LB_btn{
+    display: inline-block;
+    padding:8px 10px;
+    cursor: pointer;
+    background: #666;
+    color: #fff;
+    margin: 4px;
+    float: none;
+}
+.LB_edit_element_modal .LB_btn:hover{
+    background:#333;
+}
+.LB_edit_element_modal .LB_btn_red{
+    background: #cc3500;
+}
+.LB_edit_element_modal .LB_btn_red:hover{
+    background: #bd4300;
+}
+
+.LB_select_add_block_type{
+    display: block;
+    width: 310px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+.LB_select_add_block_type.LB_selected{
+    cursor: default !important;
+}
+select.LB_send_element{
+    font-size: 14px;
+    border: 1px solid #333;
+    padding: 3px 5px;
+}
+
+.LB_select_add_block_type span{
+    display: block;
+}
+.LB_select_add_block_type span.LB_img{
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid #333;
+}
+.LB_select_add_block_type span.LB_title {
+    font-size:14px;
+    padding:10px;
+    background: #333;
+    color: #fff;
+}
+.LB_select_add_block_type:hover span.LB_title,.LB_select_add_block_type.LB_selected span.LB_title{
+    background: #cc3500;
+}
+.LB_select_add_block_type:hover span.LB_img,.LB_select_add_block_type.LB_selected span.LB_img{
+    border:1px solid #cc3500;
+}

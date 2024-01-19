@@ -1,0 +1,1 @@
+<iframe src="/core/ajax/landing_block_edit_system.php?txt_block_id={$id}"></iframe>

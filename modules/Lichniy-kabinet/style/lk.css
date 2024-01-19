@@ -1,0 +1,81 @@
+.js_delete_cv_file svg {
+    fill: #8E8E8E;
+    width: 9px;
+    height: 9px;
+}
+div.page-lk main .row__input .input__file .input__file-label .js_delete_files:hover svg, .js_delete_cv_file:hover svg{
+    fill: #FF5722;
+}
+div.page-lk main .row__input .input__file .input__file-label .js_delete_files:hover, .js_delete_cv_file:hover{
+    cursor: pointer;
+}
+div.page-lk main .row__input .input__file .input__file-label .js_delete_files {
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding: 9px 12px;
+}
+
+.delete_cross {
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding: 9px 12px;
+    position: absolute;
+}
+.delete_cross svg {
+    fill: #8E8E8E;
+    width: 9px;
+    height: 9px;
+}
+
+.delete_cross:hover svg{
+    fill: #FF5722;
+}
+
+div.page-lk main .row__input .input__file .input__file-label{
+    overflow: hidden;
+}
+
+.massmessages_add .tag_list_button{
+    cursor: pointer;
+    color: #FF5722;
+}
+
+.massmessages_add .tag_list{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.massmessages_add .tag_list_subtitle{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.massmessages_add .input__item.checkbox{
+   display: grid;
+}
+
+.massmessages_add label{
+    padding-bottom: 10px;
+}
+
+.massmessages_add label span{
+    padding-left: 10px;
+}
+
+.massmessages_add input[type="checkbox"]{
+   width: unset;
+}
+
+.lk_edit_checkbox{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lk_edit_checkbox input{
+    width: unset;
+    margin-right: 5px;
+}

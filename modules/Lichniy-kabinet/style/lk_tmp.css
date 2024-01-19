@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*----- Минимальный набор стилей личного кабинета, без которого он разваливается ------*/
+
+.content table.table_lk td {
+    padding: unset;
+}
+
+.lk_icon{
+    padding: 0 5px;
+}
+
+.lk_icon img{
+    width: 24px;
+    max-width: unset;
+}

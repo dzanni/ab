@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="14b8e0b2-1540-4a2d-811a-fb99ccbd6059" name="autoboss" url="http://82.146.56.38">
+        <fileTransfer host="82.146.56.38" port="22" rootFolder="/var/www/www-root/data/www/expert.a-boss.ru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

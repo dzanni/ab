@@ -1,0 +1,41 @@
+/* STORES - SHOPS */
+.shops.list .item{margin:0 0 -1px;position:relative;overflow:hidden;padding:29px;border:1px solid #f0f0f0;color:#383838;transition: box-shadow 0.3s ease;-moz-transition: box-shadow 0.3s ease;-ms-transition: box-shadow 0.3s ease;-o-transition: box-shadow 0.3s ease;-webkit-transition: box-shadow 0.3s ease;}
+.shops.list .item:first-of-type{}
+.shops.list .item:hover{cursor:pointer;-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);-moz-box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.1);}
+.shops.list .item .image{float:left;width:150px;max-height:100px;text-align:center;}
+.shops.list .item .image img{max-width:100%;max-height:100%;vertical-align:middle;}
+.shops.list .item.wi .image{display:none !important;}
+.shops.list .item .rubber{margin-left:190px;}
+.shops.list .item .rubber > div{float:left;overflow:hidden;padding-top:11px;}
+.shops.list .item.wi .rubber{margin-left:0;}
+.shops.list .item .title_metro{width:50%;margin-top:-1px;padding-right:3%;}
+.shops.list .item .schedule_phone_email{width:47%;font-size: 0px;}
+.shops.list .item .schedule{width:60%;padding-right:3%;display: inline-block;box-sizing: border-box;font-size: 13px;vertical-align: top;}
+.shops.list .item .schedule{background:#fff;padding-left:0px;height:auto;}
+.shops.list .item .schedule i{top: auto;position: relative;}
+.shops.list .item .phone_email{display: inline-block;width: 40%;font-size: 13px;}
+.shops.list .item .title{font-size:15px;font-weight:bold;margin-bottom:5px;overflow:hidden;text-overflow:ellipsis;}
+.shops.list .item .metro{margin-bottom:5px;}
+.shops.list .item .metro i, .store_property.metro .value i, .stores_list .store_text.metro .value i{margin-top:7px;}
+.shop.detail a.back{display:inline-block;font-weight:bold;margin-top:35px;}
+.shops.list .icon-text.s30{margin: 2px 0px;}
+
+@media all and (max-width: 870px) {
+    .shops.list .item .schedule, .shops.list .item .phone_email {
+        width: 100%;
+    }
+}
+@media all and (max-width: 500px) {
+    .shops.list .item .image {
+        display: none;
+    }
+
+    .shops.list .item .rubber {
+        margin: 0;
+    }
+}
+@media all and (max-width: 460px){
+    .shops.list .item .title_metro, .shops.list .item .schedule_phone_email{width:100%;margin-top:0;}
+    .shops.list .item .schedule_phone_email{text-align:left;}
+    .shops.list .item .rubber > div{padding-top:0;}
+}

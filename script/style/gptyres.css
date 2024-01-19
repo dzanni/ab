@@ -1,0 +1,466 @@
+body {
+    background: #666666;
+}
+
+/*-- вводим класс page_h1 для заголовка страниц в GP TYRES --*/
+h1.page_h1 {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 2rem;
+}
+
+.bootstrap-wrapper > .container-fluid {
+    padding: 20px;
+}
+
+.items{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.search.ver_02.ver_02_small.left_form .search__title {
+    margin-bottom: 400px;
+    font-size: 2rem;
+    color: black;
+}
+
+.search.ver_02.ver_02_small.left_form .search__title span{
+   color: red;
+   font-weight: bold;
+   font-size: 2rem;
+}
+
+.advantage_ver_01_02 {
+    border-top: 20px solid #666666;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.gptyres_popular_razmer {
+    border-top: 20px solid #666666;
+    text-align: center;
+    margin: -10px -40px;
+}
+.gptyres_popular_razmer h3{
+    font-size: 1.2rem;
+    padding: 23px !important;
+    text-align: center !important;
+}
+.gptyres_popular_razmer .row > div {
+    padding: 0;
+    font-weight: bold;
+}
+
+.gptyres_popular_razmer .row > div > div {
+    padding: 13px;
+}
+
+.gptyres_popular_razmer .grey{
+    background: #d1d2d4;
+}
+.gptyres_popular_razmer .white{
+    background: #f0f0f0;
+}
+.gptyres_popular_razmer a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.gptyres_popular_razmer a:hover{
+    text-decoration: none;
+}
+
+
+header.ver_04 .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header.ver_04 .header__logo-img {
+    width: auto;
+}
+
+header.ver_04 .header__contacts {
+    margin-right: 0;
+}
+
+header.ver_04 .contacts-phone__link{
+    color:red;
+    justify-content: start;
+}
+
+header.ver_04 .header__contacts-time {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+header.ver_04 a.header__nav-link {
+    color: white;
+
+}
+header.ver_04 a.header__nav-link:hover {
+    color: black;
+}
+
+
+header.ver_04 .header__nav-item.parent > a::after {
+    background: url(/i/icon__arrow-white.svg) no-repeat;
+}
+
+header.ver_04 .header__auth a {
+   color: white;
+}
+header.ver_04 .header__auth a:hover {
+    color: black;
+}
+
+header.ver_04 .header-auth__icon {
+    background: none;
+}
+
+footer.ver_03 .footer__bottom {
+   padding-right: 25px;
+    padding-left: 25px;
+    border-top: 20px solid #666666;
+}
+
+footer .footer__logo-img {
+    max-width: 350px;
+}
+
+footer.ver_03 .footer__bottom .footer__privacy-link {
+    max-width: 600px;
+}
+
+.advantage_ver_01_02 .advantage__title {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+footer.ver_03 .footer__bottom .footer__subtitle {
+   display: none;
+}
+
+footer.ver_03 .footer__bottom .footer__adress {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+footer.ver_03 .footer__bottom a.footer__contacts-phone {
+    padding-top: 10px;
+    color:red;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer.ver_03 .footer__bottom a.footer__contacts-phone:hover {
+    color:black;
+}
+
+footer.ver_03 .footer__bottom a.footer__contacts-mail {
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+footer.ver_03 .footer__bottom a.footer__contacts-mail:hover {
+    color: black;
+}
+
+footer.ver_03 .footer__bottom .container-fluid {
+    padding-bottom: 0;
+    padding-top: 40px;
+}
+
+footer.ver_03 .footer__bottom .container-fluid.bottom_copyright {
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+footer.ver_03 .footer__bottom .container-fluid.bottom_copyright .footer__copy{
+   font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0;
+}
+
+.breadcrumbs {
+    padding: 10px 25px 0 25px;
+    font-size: medium;
+}
+
+.pagination a.active {
+    color: white;
+}
+
+.pageData.text_block {
+    padding: 10px 25px 0 25px;
+    font-size: 1.1rem;
+    line-height: 1.25;
+}
+
+.pageData.text_block a.delivery_link{
+     color: blue;
+     text-decoration: underline;
+}
+
+.pageData.text_block a.delivery_link:hover{
+    color: black;
+}
+
+.card__product-item{
+    padding-bottom: 0px;
+}
+
+.card__product-item .product__item{
+   padding-right: 25px;
+    padding-left: 25px;
+}
+
+.card__product-item .product__more {
+    padding: 60px 40px 40px 40px;
+}
+
+.card__product-item .product__more .product__more-title{
+    width: auto;
+}
+
+.card__product-item .product__more-slick .slider-nav__button path {
+    stroke: white;
+}
+
+.card__product-item .product__more-slider {
+    width: calc(100% - 50px);
+    margin-left: 25px;
+}
+
+.lk_menu{
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 1.5;
+}
+
+.cart__inner{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.admin_filter{
+    padding-top: 40px;
+}
+
+.admin_filter .admin_filter-form{
+    padding: 10px 0;
+}
+
+.admin_filter .admin_filter-input {
+    height: 46px;
+    padding-left: 15px;
+    border-radius: var(--border-radius-25);
+    border: 1px solid var(--other-line);
+    font-size: 1rem;
+    width: calc(58%);
+}
+
+.admin_filter .admin_filter-title{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.admin_filter .admin_filter-btn {
+    height: 46px;
+    width: calc(40%);
+    color: #fff;
+    background: var(--general-accent);
+    border-radius: var(--border-radius-30);
+    border: 1px solid var(--other-line);
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+/*--------------- Попап админа-----------*/
+.forCar {
+    padding: 10px 0;
+}
+a.show_also_variants{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.popup__wrap.also_variants_popup{
+    width: auto;
+    max-width: 100%;
+    border: 2px solid var(--other-line);
+}
+.content.content_popup{
+    padding: 0 0;
+    line-height: 100%;
+}
+
+/*
+table.innerTovarTable{
+   text-align: center;
+}
+
+table.innerTovarTable td{
+    border: 1px solid black;
+}
+*/
+/*--------------- Конец Попапа админа -----------*/
+
+.cards__product .product__item{
+    border: 1px solid #ccc;
+    margin: -14px;
+    margin-top: 16px;
+}
+
+.cards__product .product__item .artikul{
+    text-align: right;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.attention{
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+.green{
+    color: var(--general-accent);
+    font-weight: bold;
+}
+.link{
+    color: #0b559b;
+    text-decoration: underline;
+}
+.link:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cards__product .product__item .product__title{
+    height: 3rem;
+}
+.cards__product .product__price{
+    margin: 20px 0;
+}
+
+.cards__product .product__add{
+    display: flex;
+    margin-top: 0;
+}
+
+.icons {
+    position: absolute;
+    margin-top: -20px;
+}
+.icons img{
+    height: 18px;
+}
+
+.product__tech-item{
+    display: flex;
+}
+.product__tech-title{
+    display: flex;
+    flex-basis: 230px;
+}
+.product__tech-title span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0;
+    flex: 1 0;
+    border-bottom: 1px dashed #DEDEDE;
+    display: block;
+    height: 16px;
+}
+
+.pageData a{
+    color: #3aac46;
+    text-decoration: underline;
+}
+.pageData a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .search.ver_02.ver_02_small.left_form .search__title {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    h1.page_h1 {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .items{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    header.ver_04 .header__contacts {
+        margin-right: auto;
+    }
+    header.ver_04 .contacts-phone__link{
+        justify-content: center;
+    }
+    header.ver_04 .header__contacts-time {
+        text-align: center;
+    }
+    .header__logo-link img.header__logo-img{
+        display: none;
+    }
+    .header__logo-link{
+        background: url("/downloads/logo_mob.png");
+        width: 242px;
+        height: 71px;
+        background-size: cover;
+    }
+    .footer__logo img.footer__logo-img{
+        display: none;
+    }
+    .footer__logo{
+        background: url("/downloads/logo_mob.png");
+        width: 242px;
+        height: 71px;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 25px;
+     }
+    .breadcrumbs {
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+    .pageData.text_block {
+        text-align: center;
+    }
+    .techno_button_on{
+        display: inline-flex;
+        margin: 0 0!important;
+    }
+    .cart__inner{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .header__logo-link{
+        width: 164px;
+        height: 48px;
+    }
+    .footer__logo{
+        width: 164px;
+        height: 48px;
+        margin-bottom: 20px;
+    }
+    header.ver_04 .header__contacts {
+        margin-top: 60px;
+    }
+    header.ver_04 .header__menu-open {
+        top: 96px;
+        left: auto;
+    }
+}
+

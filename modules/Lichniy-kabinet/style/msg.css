@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.messages_lk .msg{
+    display: block;
+    width: 90%;
+    float: left;
+    background:#ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.messages_lk .my_msg{
+    background: #fff;
+    float: right;
+    border: 1px solid var(--general-black);
+}
+.messages_lk .msg_from_info{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -9px;
+    text-align: right;
+}
+
+.messages_lk .my_msg .msg_from_info{
+    color: #ccc;
+}
+.messages_lk .files_inner{
+}
+.messages_lk .files_inner p{
+    margin:0;
+    padding: 0;
+}
+.messages_lk .files_inner p a{
+    text-decoration: underline;
+    color: #FE0000; 
+}
+.messages_lk .files_inner p a:hover{
+    text-decoration: none;
+}
